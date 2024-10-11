@@ -23,6 +23,16 @@ namespace sport
         public MainWindow()
         {
             InitializeComponent();
+            Classes.Navigation.ActiveMain = MainFrame;
+            Classes.Navigation.ActiveMain.Navigate(new Pages.UserPage());
+
+        }
+
+        public Frame MainFrame { get; }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
     }
 }

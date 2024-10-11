@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище sportModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="gender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namegender" Type="nvarchar" MaxLength="52" Nullable="false" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namerole" Type="nvarchar" MaxLength="52" Nullable="false" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namestatus" Type="nvarchar" MaxLength="52" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role" Type="int" Nullable="false" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="patronym" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="52" Nullable="false" />
+    <Property Name="seria" Type="int" Nullable="false" />
+    <Property Name="number" Type="int" Nullable="false" />
+    <Property Name="birthday" Type="date" Nullable="false" />
+    <Property Name="lastpass" Type="date" />
+    <Property Name="status" Type="int" />
+    <Property Name="gender" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_user_gender">
+    <End Role="gender" Type="Self.gender" Multiplicity="1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="gender">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="gender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_role">
+    <End Role="role" Type="Self.role" Multiplicity="1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_status">
+    <End Role="status" Type="Self.status" Multiplicity="0..1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище sportModelContainer">
+    <EntitySet Name="gender" EntityType="Self.gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="role" EntityType="Self.role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="status" EntityType="Self.status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_user_gender" Association="Self.FK_user_gender">
+      <End Role="gender" EntitySet="gender" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_role" Association="Self.FK_user_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_status" Association="Self.FK_user_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

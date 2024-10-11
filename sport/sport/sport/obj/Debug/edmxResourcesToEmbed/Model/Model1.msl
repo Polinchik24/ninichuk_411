@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище sportModelContainer" CdmEntityContainer="sportEntities">
+    <EntitySetMapping Name="gender">
+      <EntityTypeMapping TypeName="sportModel.gender">
+        <MappingFragment StoreEntitySet="gender">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namegender" ColumnName="namegender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="sportModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namerole" ColumnName="namerole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="status">
+      <EntityTypeMapping TypeName="sportModel.status">
+        <MappingFragment StoreEntitySet="status">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namestatus" ColumnName="namestatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="sportModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="sportModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="patronym" ColumnName="patronym" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="seria" ColumnName="seria" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="lastpass" ColumnName="lastpass" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

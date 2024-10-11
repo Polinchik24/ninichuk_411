@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="gender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namegender" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK_user_gender" FromRole="gender" ToRole="user" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namerole" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK_user_role" FromRole="role" ToRole="user" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namestatus" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK_user_status" FromRole="status" ToRole="user" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="role" Type="Int32" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronym" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="52" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="seria" Type="Int32" Nullable="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="birthday" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="lastpass" Type="DateTime" Precision="0" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="gender" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="gender1" Relationship="Self.FK_user_gender" FromRole="user" ToRole="gender" />
+    <NavigationProperty Name="role1" Relationship="Self.FK_user_role" FromRole="user" ToRole="role" />
+    <NavigationProperty Name="status1" Relationship="Self.FK_user_status" FromRole="user" ToRole="status" />
+  </EntityType>
+  <Association Name="FK_user_gender">
+    <End Role="gender" Type="Self.gender" Multiplicity="1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="gender">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="gender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_role">
+    <End Role="role" Type="Self.role" Multiplicity="1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_status">
+    <End Role="status" Type="Self.status" Multiplicity="0..1" />
+    <End Role="user" Type="Self.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sportEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gender" EntityType="Self.gender" />
+    <EntitySet Name="role" EntityType="Self.role" />
+    <EntitySet Name="status" EntityType="Self.status" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="user" EntityType="Self.user" />
+    <AssociationSet Name="FK_user_gender" Association="Self.FK_user_gender">
+      <End Role="gender" EntitySet="gender" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_role" Association="Self.FK_user_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_status" Association="Self.FK_user_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="user" EntitySet="user" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

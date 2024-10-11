@@ -1,0 +1,49 @@
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.csproj.AssemblyReference.cache
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\MainWindow.g.cs
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\Pages\UserPage.g.cs
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\App.g.cs
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport_Content.g.cs
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport_MarkupCompile.cache
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport_MarkupCompile.lref
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\sport.exe.config
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\sport.exe
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\sport.pdb
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\EntityFramework.dll
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\EntityFramework.xml
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\MainWindow.baml
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\Pages\UserPage.baml
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.g.resources
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.Properties.Resources.resources
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.csproj.GenerateResource.cache
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.csproj.CoreCompileInputs.cache
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.csproj.CopyComplete
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.exe
+C:\Users\comcuru\Desktop\Новая папка\sport\sport\sport\obj\Debug\sport.pdb
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\sport.exe.config
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\sport.exe
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\sport.pdb
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\EntityFramework.dll
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\EntityFramework.xml
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.csproj.AssemblyReference.cache
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\MainWindow.g.cs
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\Pages\UserPage.g.cs
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\App.g.cs
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport_Content.g.cs
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport_MarkupCompile.cache
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport_MarkupCompile.lref
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\App.baml
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\MainWindow.baml
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\Pages\UserPage.baml
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.g.resources
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.Properties.Resources.resources
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.csproj.GenerateResource.cache
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.csproj.CoreCompileInputs.cache
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.csproj.CopyComplete
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.exe
+C:\Users\comcuru\Desktop\KT3_Module4_НиничукПолинаИСП411\sport\sport\sport\obj\Debug\sport.pdb

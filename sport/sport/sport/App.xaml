@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:sport"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
